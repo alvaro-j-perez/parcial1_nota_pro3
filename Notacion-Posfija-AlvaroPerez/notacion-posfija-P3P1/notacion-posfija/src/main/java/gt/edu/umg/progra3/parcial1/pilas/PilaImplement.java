@@ -2,6 +2,8 @@ package gt.edu.umg.progra3.parcial1.pilas;
 
 import java.util.NoSuchElementException;
 
+//lo primero que se hace aquies implementar la pila
+// la clase implement es la que le da las funcionalidades de la pila
 public class PilaImplement implements Pila{
     private Node top = null;
     @Override
@@ -9,6 +11,7 @@ public class PilaImplement implements Pila{
         top = new Node(item, top);
     }
 
+    //funciones de la interface pila
     @Override
     public String pop() {
         if (top == null) {
